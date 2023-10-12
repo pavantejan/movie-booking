@@ -1,0 +1,64 @@
+server:
+  port: 8080
+  error:  include-message=always
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/moviebooking
+    username: root
+    password: asura
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  kafka:
+    template:
+      default-topic: topic1
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      auto-offset-reset:  latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+#logging:
+#  file: logs/elkdemo.log
+
+
+
+
+
+#  data:
+#    cassandra:
+#      port: 9042
+#      contact-points: mycassandra
+#      keyspace-name: mykeyspace
+#      schema-action: create_if_not_exits
+#      entity-base-package: src/main/java/com/movie/booking/model
+
+
+
+#  components:
+#    securitySchemes:
+#      bearerAuth: # arbitrary name for the security scheme
+#        type: http
+#        scheme: bearer
+#        bearerFormat: JWT    # optional, arbitrary value for documentation purposes
+#  # 2) Apply the security globally to all operations
+#  security:
+#    - bearerAuth: [ ]
+
+
+#spring:
+#  h2:
+#      console:
+#        enabled: 'true'
+#  datasource:
+#      username: sa
+#      url: jdbc:h2:mem:user
+#      driverClassName: org.h2.Driver
+#      password:
+#  jpa:
+#      database-platform: org.hibernate.dialect.H2Dialect
+#      hibernate: ddl-auto:update

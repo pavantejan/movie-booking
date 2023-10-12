@@ -1,0 +1,31 @@
+20-09-2023 00:09:46.930 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 26092 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+20-09-2023 00:09:46.939 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+20-09-2023 00:10:01.720 [restartedMain] INFO  com.movie.booking.UserApplication.logStarted - Started UserApplication in 16.08 seconds (process running for 17.601)
+20-09-2023 00:10:19.796 [http-nio-8080-exec-2] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome Function
+20-09-2023 00:57:13.022 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 2272 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+20-09-2023 00:57:13.033 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+20-09-2023 00:57:46.210 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 15484 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+20-09-2023 00:57:46.213 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+20-09-2023 00:57:55.383 [restartedMain] INFO  com.movie.booking.UserApplication.logStarted - Started UserApplication in 10.04 seconds (process running for 11.299)
+20-09-2023 00:58:48.485 [http-nio-8080-exec-2] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome Function
+20-09-2023 00:58:48.485 [http-nio-8080-exec-2] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome mummy
+
+
+20-09-2023 16:36:26.718 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 2372 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+20-09-2023 16:36:26.724 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+20-09-2023 16:36:38.066 [restartedMain] INFO  com.movie.booking.UserApplication.logStarted - Started UserApplication in 12.207 seconds (process running for 13.41)
+20-09-2023 16:36:52.641 [http-nio-8080-exec-1] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome Function
+20-09-2023 16:38:10.626 [http-nio-8080-exec-5] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome Function
+20-09-2023 16:39:39.941 [http-nio-8080-exec-8] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome Function
+20-09-2023 16:39:53.496 [http-nio-8080-exec-9] INFO  c.m.b.controller.AuthController.welcome - Inside Hello World welcome Function
+10-10-2023 10:13:47.547 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 12604 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+10-10-2023 10:13:47.561 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-10-2023 10:14:03.121 [restartedMain] INFO  com.movie.booking.UserApplication.logStarted - Started UserApplication in 16.944 seconds (process running for 18.535)
+10-10-2023 10:20:11.436 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 31660 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+10-10-2023 10:20:11.443 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-10-2023 10:20:28.071 [restartedMain] INFO  com.movie.booking.UserApplication.logStarted - Started UserApplication in 17.824 seconds (process running for 19.534)
+10-10-2023 10:20:47.156 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 20668 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+10-10-2023 10:20:47.164 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-10-2023 10:23:49.979 [restartedMain] INFO  com.movie.booking.UserApplication.logStarting - Starting UserApplication using Java 17.0.7 with PID 25764 (C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User\User\target\classes started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\IIHT Movie Booking App\User)
+10-10-2023 10:23:49.989 [restartedMain] INFO  com.movie.booking.UserApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-10-2023 10:24:06.723 [restartedMain] INFO  com.movie.booking.UserApplication.logStarted - Started UserApplication in 18.29 seconds (process running for 20.029)
