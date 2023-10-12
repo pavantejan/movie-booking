@@ -16,6 +16,8 @@ import { AllTicketsComponent } from './movie-components/all-tickets/all-tickets.
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { User } from './model/user';
+import { ErrorComponent } from './error/error.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -31,7 +33,9 @@ import { User } from './model/user';
     AddMovieComponent,
     UpdateMovieComponent,
     BookTicketComponent,
-    AllTicketsComponent
+    AllTicketsComponent,
+    ErrorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
