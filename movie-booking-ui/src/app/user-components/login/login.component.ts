@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
           this.authResponse.Token = data.token;
           this.authResponse.IsValid = data.valid;
 
-          // console.log(this.authResponse);
+          this.userService.setAuthResponse(this.authResponse);
           
           this.securityToken.Jwt = this.authResponse.Token;
           // console.log(this.token);

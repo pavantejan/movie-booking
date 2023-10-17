@@ -1,1 +1,38 @@
-<p>home works!</p>
+<div
+  *ngIf="message.length !== 0"
+  class="flex flex-wrap justify-center items-center font-bold text-xl p-40"
+>
+  {{ message }}
+</div>
+
+<div
+  *ngIf="movies.length === 0 && message.length === 0"
+  class="flex flex-wrap justify-center items-center font-bold text-xl p-40"
+>
+  No movies found...
+</div>
+
+<div
+  class="pl-32 pr-32 pb-40 pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-center items-center"
+>
+  <div *ngFor="let movie of movies">
+    <div
+      class="flex flex-wrap p-4 justify-center items-center h-80 w-80 max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-lg hover:bg-cyan-100 hover:text-black"
+      [routerLink]="['/bookTicket/' + movie.id]"
+    >
+      <a>
+        <img class="h-40 mr-2" src="{{ movie.movieImage }}" alt="Java Image" />
+      </a>
+      <div class="font-bold text-lg mb-2 px-8 pt-4">{{ movie.movieName }}</div>
+      <div class="font-bold text-lg mb-2 px-8 pb-8">
+        <button
+          type="button"
+          [routerLink]="['/updateMovie/'+movie.id]"
+          class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        >
+          Update movie
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

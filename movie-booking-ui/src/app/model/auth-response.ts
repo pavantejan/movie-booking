@@ -5,11 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class AuthResponse {
 
-    private username: string = "";
-    private email: string = "";
-    private role: string = "";
-    private token: string = "";
-    private isValid: boolean = false;
+    username: string = "";
+    email: string = "";
+    role: string = "";
+    token: string = "";
+    isValid: boolean = false;
 
     public get Username(): string {
         return this.username;

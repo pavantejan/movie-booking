@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class TicketController {
 
     @Autowired
@@ -34,7 +34,7 @@ public class TicketController {
         if( userService.validateToken(jwt) ){
             if( ticketService.bookMovieByAddingTicket(ticket) ){
                 // kafka template add message to topic
-                topicProducer.send("Ticket added with movie name " + ticket.getMovieName() + " - added");
+//                topicProducer.send("Ticket added with movie name " + ticket.getMovieName() + " - added");
                 return new ResponseEntity<String>("Succesfully booked ticket",HttpStatus.OK);
             }
             return new ResponseEntity<String>("Ticket is not created", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -48,7 +48,7 @@ public class TicketController {
         if( userService.validateToken(jwt) && userService.userRole(jwt).equals("admin") ){
             if( ticketService.deleteTicketById(id) ){
                 // kafka template add message to topic
-                topicProducer.send("Ticket with id: " + id + " - deleted");
+//                topicProducer.send("Ticket with id: " + id + " - deleted");
                 return new ResponseEntity<String>("Successfully Ticket is deleted by ID", HttpStatus.CREATED);
             }else{
                 return new ResponseEntity<String>("Ticket is not deleted in DB", HttpStatus.CONFLICT);
@@ -62,7 +62,7 @@ public class TicketController {
 
         if( userService.validateToken(jwt) && userService.userRole(jwt).equals("admin") ){
                  // kafka template add message to topic
-                topicProducer.send("all Tickets with movie name: " + movieName + " - fetched");
+//                topicProducer.send("all Tickets with movie name: " + movieName + " - fetched");
                 return new ResponseEntity<List<Ticket>>(ticketService.getAllTickets(movieName), HttpStatus.CREATED);
         }
         return new ResponseEntity<String>("only admins are allowed to access the endpoint", HttpStatus.FORBIDDEN);

@@ -50,6 +50,7 @@ export class RegistrationComponent implements DoCheck {
     }
     if( this.repeatPassword !== '' ){
       this.message3 = ( this.password === this.repeatPassword ? '' : 'Confirm password and password must match');
+      
     }
   }
 

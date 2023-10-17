@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthRequest {
-    private username = "";
-    private password = "";
+    username = "";
+    password = "";
 
     public get Username():string{
         return this.username;
