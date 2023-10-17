@@ -22,6 +22,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         List<users> allUsers = userRepo.findAll();
+        System.out.println("insdide token custom user details");
 
 
         users uDetails = allUsers.stream().filter(player -> player.getUsername().contains(username))

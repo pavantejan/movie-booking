@@ -1,0 +1,6 @@
+10-10-2023 12:10:56.443 [main] INFO  c.movie.booking.UserApplicationTests.logStarting - Starting UserApplicationTests using Java 17.0.7 with PID 32112 (started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\_Movie1\movie-booking\User\User)
+10-10-2023 12:10:56.446 [main] INFO  c.movie.booking.UserApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-10-2023 12:16:30.493 [main] INFO  c.movie.booking.UserApplicationTests.logStarting - Starting UserApplicationTests using Java 17.0.7 with PID 18032 (started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\_Movie1\movie-booking\User\User)
+10-10-2023 12:16:30.497 [main] INFO  c.movie.booking.UserApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-10-2023 12:18:18.656 [main] INFO  c.movie.booking.UserApplicationTests.logStarting - Starting UserApplicationTests using Java 17.0.7 with PID 31544 (started by PavanTejan in C:\Users\PavanTejan\Documents\_movie_booking_app\_Movie1\movie-booking\User\User)
+10-10-2023 12:18:18.659 [main] INFO  c.movie.booking.UserApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"

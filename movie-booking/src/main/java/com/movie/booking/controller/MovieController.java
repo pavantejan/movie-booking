@@ -15,7 +15,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class MovieController {
 
 
@@ -34,7 +34,7 @@ public class MovieController {
 
         if( userService.validateToken(jwt) ){
             // kafka template add message to topic
-            topicProducer.send("all movies in DB requested");
+//            topicProducer.send("all movies in DB requested");
             return new ResponseEntity<List<Movie>>(movieService.getAllMovies(),HttpStatus.OK);
         }
         return new ResponseEntity<String>("Unauthorized user", HttpStatus.UNAUTHORIZED);
@@ -46,7 +46,7 @@ public class MovieController {
         if( userService.validateToken(jwt) && userService.userRole(jwt).equals("admin") ){
             if( movieService.addMovie(movie) != null ){
                 // kafka template add message to topic
-                topicProducer.send("Movie with name " + movie.getMovieName() + " added");
+//                topicProducer.send("Movie with name " + movie.getMovieName() + " added");
                 return new ResponseEntity<String>("Successfully Added movie", HttpStatus.CREATED);
             }else{
                 return new ResponseEntity<String>("movie is not created in DB", HttpStatus.CONFLICT);
@@ -61,7 +61,7 @@ public class MovieController {
         if( userService.validateToken(jwt) && userService.userRole(jwt).equals("admin") ){
             if( movieService.updateMovie(id,movie) ){
                 // kafka template add message to topic
-                topicProducer.send("Movie with name " + movie.getMovieName() + " updated");
+//                topicProducer.send("Movie with name " + movie.getMovieName() + " updated");
                 return new ResponseEntity<String>("Successfully updated movie", HttpStatus.CREATED);
             }else{
                 return new ResponseEntity<String>("movie is not updated in DB", HttpStatus.CONFLICT);
@@ -76,7 +76,7 @@ public class MovieController {
         if( userService.validateToken(jwt) && userService.userRole(jwt).equals("admin") ){
             if( movieService.deleteByMovieId(id) ){
                 // kafka template add message to topic
-                topicProducer.send("Movie with id " + id + " deleted");
+//                topicProducer.send("Movie with id " + id + " deleted");
                 return new ResponseEntity<String>("Successfully deleted movie", HttpStatus.CREATED);
             }else{
                 return new ResponseEntity<String>("movie is not deleted from DB", HttpStatus.CONFLICT);
@@ -91,7 +91,7 @@ public class MovieController {
 
         if( userService.validateToken(jwt) ){
             // kafka template add message to topic
-            topicProducer.send("movies in DB requested by id: "+ id);
+//            topicProducer.send("movies in DB requested by id: "+ id);
             return new ResponseEntity<Movie>(movieService.getMovieById(id),HttpStatus.OK);
         }
         return new ResponseEntity<String>("Unauthorized user", HttpStatus.UNAUTHORIZED);

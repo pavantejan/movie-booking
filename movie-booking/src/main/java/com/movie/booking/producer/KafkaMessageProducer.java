@@ -10,11 +10,11 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class KafkaMessageProducer {
 
-    @Autowired
-    KafkaTemplate<String, String> kafkaTemplate;
-
-    public void send(String message){
-        log.info("Payload enviado: {}", message);
-        kafkaTemplate.send("topic1", message);
-    }
+//    @Autowired
+//    KafkaTemplate<String, String> kafkaTemplate;
+//
+//    public void send(String message){
+//        log.info("Payload enviado: {}", message);
+//        kafkaTemplate.send("topic1", message);
+//    }
 }

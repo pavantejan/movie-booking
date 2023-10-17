@@ -30,6 +30,9 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         System.out.println("Inside do filter");
+        System.out.println(request.getMethod()+ " ---- " +request.getInputStream()+ " ---- "+request.getRequestURI());
+        System.out.println(request.getLocale()+ " ---- " +request.getServletPath()+ " ---- "+request.getServerName());
+        System.out.println(request.getRequestURL()+ " ---- " +request.getSession()+ " ---- "+request.getLocalPort());
 
         String authorizationHeader = request.getHeader("Authorization");
         System.out.println(authorizationHeader);

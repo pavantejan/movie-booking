@@ -1,26 +1,29 @@
 server:
   port: 8080
-  error:  include-message=always
+#  error:  include-message=always
 
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/moviebooking
-    username: root
-    password: asura
+#    url: jdbc:mysql://localhost:3306/moviebooking
+#    username: root
+#    password: asura
+    url: jdbc:mysql://database-movie-booking.c918bifp8fik.us-west-2.rds.amazonaws.com/moviebooking
+    username: admin
+    password: adminasura
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
-  kafka:
-    template:
-      default-topic: topic1
-    consumer:
-      bootstrap-servers: localhost:9092
-      group-id: group_id
-      auto-offset-reset:  latest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#  kafka:
+#    template:
+#      default-topic: topic1
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: group_id
+#      auto-offset-reset:  latest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 #logging:
 #  file: logs/elkdemo.log

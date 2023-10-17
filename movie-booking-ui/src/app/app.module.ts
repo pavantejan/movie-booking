@@ -7,17 +7,22 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './user-components/login/login.component';
 import { RegistrationComponent } from './user-components/registration/registration.component';
-import { SearchMovieComponent } from './movie-components/search-movie/search-movie.component';
 import { ForgetPasswordComponent } from './user-components/forget-password/forget-password.component';
 import { AddMovieComponent } from './movie-components/add-movie/add-movie.component';
 import { UpdateMovieComponent } from './movie-components/update-movie/update-movie.component';
 import { BookTicketComponent } from './movie-components/book-ticket/book-ticket.component';
-import { AllTicketsComponent } from './movie-components/all-tickets/all-tickets.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { User } from './model/user';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
+import { TokenIntercepter } from './model/token-intercepter';
+import { AuthRequest } from './model/auth-request';
+import { AuthResponse } from './model/auth-response';
+import { LoginStatus } from './model/login-status';
+import { Movie } from './model/movie';
+import { SecurityToken } from './model/security-token';
+import { Ticket } from './model/ticket';
 
 
 
@@ -28,12 +33,10 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     LoginComponent,
     RegistrationComponent,
-    SearchMovieComponent,
     ForgetPasswordComponent,
     AddMovieComponent,
     UpdateMovieComponent,
     BookTicketComponent,
-    AllTicketsComponent,
     ErrorComponent,
     HomeComponent
   ],
@@ -44,7 +47,18 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
   ],
   providers: [
-    User
+    User,
+    AuthRequest,
+    AuthResponse,
+    LoginStatus,
+    Movie,
+    SecurityToken,
+    Ticket,    
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass : TokenIntercepter,
+      multi:true
+    }
   ],
   bootstrap: [AppComponent]
 })

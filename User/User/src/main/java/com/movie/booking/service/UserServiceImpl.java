@@ -83,12 +83,13 @@ public class UserServiceImpl implements UserService{
     @Override
     public String userRole(String jwt) {
 
-        jwt = jwt.substring(7);
+        if( jwt.startsWith("Bearer"))
+            jwt = jwt.substring(7);
+
         String username  = jwtService.extractUsername(jwt);
 
         users user = userRepo.findByUsername(username);
 
         return user.getRole();
     }
-
 }

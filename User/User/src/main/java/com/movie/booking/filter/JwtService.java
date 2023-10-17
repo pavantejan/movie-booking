@@ -53,6 +53,9 @@ public class JwtService {
 
     private Claims extractAllClaims(String token) {
         System.out.println("token: "+token);
+        if( token.startsWith("Bearer"))
+            token = token.substring(7);
+        System.out.println("token: "+token);
         return Jwts
                 .parserBuilder()
                 .setSigningKey(getSignKey())
